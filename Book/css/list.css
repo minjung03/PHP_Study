@@ -1,0 +1,39 @@
+            @font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#table {
+    font-family: 'ELAND_Choice_M';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);   
+    text-align: center;
+}
+a{
+    color :  black;
+}
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+#head{
+    font-family: 'ELAND_Choice_M';
+    margin-top: 20px;
+    text-align: right;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+#head h2{
+    padding : 15px;
+    font-size: 6ex;
+    font-weight: bold;
+    text-align : center;
+}
+#head a{
+    background-color: yellow;
+    padding: 8px;color :  black;
+    font-size: large;
+    margin-right: 250px;
+}

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+form {
+    font-family: 'ELAND_Choice_M';
+    padding-top: 50px;
+    text-align: center;
+}
+table{
+    margin : auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+button{
+    color: white;
+    background-color: black;
+    border: 0;
+    width: 50px;
+    padding: 5px;
+} 
