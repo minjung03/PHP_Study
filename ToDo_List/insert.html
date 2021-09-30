@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            form {
+                text-align: center;
+            }
+            table{
+                margin: auto;
+            }
+            td {
+                padding: 3px;
+            }
+        </style>
+    </heaad>
+    <body>
+
+        <form method="POST" action="insert.php">
+            <h1>TODO 작성하기</h1>
+            <table style="text-align: center;">
+                <tr>
+                    <td>작성자 </td>
+                    <td><input type="text" name="user"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호 </td>
+                    <td><input type="text" name="pass"></td>
+                </tr>
+                <tr>
+                    <td>할 일 </td>
+                    <td><input type="text" name="todo"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">완료</button></td>
+                </tr>
+
+            </table>
+
+        </form>
+    </body>
+</html>

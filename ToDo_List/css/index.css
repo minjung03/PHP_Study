@@ -1,0 +1,26 @@
+table {
+    text-align: center;
+}
+#title h2{
+    margin: 20px;
+    text-align :  left;
+    font-weight: bold;
+}
+#list_write {
+    margin : 20px;
+    text-align :  right;
+    font-size: large;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+#chk {
+    color: rgb(32, 32, 184);
+    font-weight: bold;
+}
