@@ -1,0 +1,34 @@
+<<mysql 
+접속방법
+mysql -u아이디 -p비밀번호 사용할데이터베이스// 꼭 줘야 아래에서 에러가 안남
+
+db만들기
+create database 데이터베이스이름;
+
+사용자 계정 만들기 'test' = 사용할user이름, 'testdb' = 위에서 만든 DB이름
+1) create user 'test';
+2) create user 'test'@'localhost' identified by '1111';
+3) create user 'test'@'%' identified by '1111';
+4) grant all privileges on 'testdb' to 'test'@'localhost';
+5) flush privileges;
+------------------------------------------------------------
+3번에서 에러나면..
+
+drop user 'test';
+delete form user where user='test'
+   - user 테이블에서 user값이 'test'라는 것을 삭제
+delete form db where user='test'
+   - db 테이블에서 user값이 'test'라는 것을 삭제
+flush privileges;
+   - 재부팅/재시작을 의미
+
+이후,
+create user 'test'@'localhost' identified by '1111';
+create user 'test'@'%'identified by '1111';
+ - 이 문장이 있어서 외부에서도 접근 가능(도서관, 학원 등..)
+grant all privileges on testdb.* to 'test'@'localhost';
+ - 권한주기(crud)
+flush privileges;
+
+exit로 빠져나오기
+------------------------------------------------------------

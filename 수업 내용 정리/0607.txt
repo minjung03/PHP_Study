@@ -1,0 +1,32 @@
+테이블 구조 보는 mysql 명령
+desc 테이블이름 ; 
+---------------------------------------------------------
+php 와 db 연동 : window 의 vsvode에서 query를 사용할 수 있다.
+(즉, cmd 창 사용 안함)
+
+<< php와 mysql의 연동
+
+** 전부 php의 함수 사용하여 연동
+** 이 함수들은 외워서 사용해야한다
+
+*********이 함수들은 무조건 알고있기
+- mysql에 접속하는 함수 : mysqli_connect (주소, 아이디, 비빌번호, db이름)
+- 쿼리 날리는 함수 : mysqli-query()
+- 결과를 가져오는 함수  : mysqli_fetch_row() (필드(인덱스)를 숫자로 가져옴), mysqli_fetch_array() (필드(인덱스)를 필드명으로 가져옴)
+- db 닫는 함수 : mysqli_close()
+- 데이터 갯수 가져오는 함수 : mysqli_num_rows()
+
+
+** mysql 기본 포트번호 : 3306 (상식이니까 알아두기)
+
+
+login 테이블에서
+id는 auto_incremen로 주면 자동 증가가 된다.
+** auto_increment : 자동 증가
+----------------------------------------------
+1) insert , update, delete : 결과값이 없음
+2) select : 결과값이 있어서 '결과값을 저장할 변수'를 꼭 지정해줘야 함
+// 테이블은 2차원 배열로 저장되어 있다.
+result에는 테이블 형태(2차원 배열) 그대로 들어가 있다. 여기서 한 줄씩 가져오는게 mysqli_fetch_row(), mysqli_fetch_array() 이다.
+
+$re = mysqli_fetch_row($result) // $result에 있는 걸 한줄 가져와 $re에 저장 (배열로 저장됨 , 0방..1방..으로 접근(반복문))

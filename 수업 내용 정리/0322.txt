@@ -1,0 +1,67 @@
+<<배열
+
+1. $arr=array();  <--배열생성
+   $arr[0]="apple";
+  $arr[1]="banana";
+   $arr[2]="mango";
+
+2. $arr=array("apple","banana","mango");
+
+3. $arr2[3]="grape";  //arr2라는 배열 3번째방에 grapd 넣는다
+얘는 배열을 안만들고 값을 넣으라는 얘기지..
+php는 내부적으로 $arr2=array() 자동으로 생성해준다.
+--------------------------------------------------------------------------
+$arr=array("apple","banana","mango");
+
+for($i=0;$i<$arr.length;$i++) {
+echo $arr[i];
+}
+4. 배열 원소갯수: sizeof();  count()
+for($i=0;$i<size($arr);$i++) {
+echo $arr[i];
+}
+
+
+**forech 문 사용
+foreach(배열  as 값을 저장할 변수) {
+실행할 명령;
+}
+-------------------------------------------------------------
+<<function(함수)
+-반복되는 코드를 작성
+-필요할 때마다 함수호출
+
+1. 함수작성
+function  함수이름(매개변수, 매개변수....) {
+   return  값;
+}
+
+2. 함수호출
+  변수= 함수이름();
+-----------------------------------------------------------
+ https://hyunshop.emirim.kr/
+ https://byulshop.emirim.kr/
+ https://eunshop.emirim.kr/
+ https://wooshop.emirim.kr/
+ https://minshop.emirim.kr/
+------------------------------------------------------
+1. 1부터 10까지 더한 합을 출력하는 함수 sum 만들기
+2. 1부터 100사이의 짝수의 합 출력하는 함수 even_sum
+3. 두 수를 넘겨서(n,m) n부터 m까지의 합 구하기 nSumm 
+4. 단  을 넘겨서 구구단 출력
+5. 1부터 100사이의 3의 배수의 합 출력하는 함수 double_sum 만들기
+-------------------------------------------------------
+<<form
+<form method="post" action=".....php" >
+<
+
+
+</form>
+
+
+
+
+
+
+
+

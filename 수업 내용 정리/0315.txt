@@ -1,0 +1,73 @@
+-php는: 서버측 언어  => web server에서 작동된다
+=> apache에서 작동되야 함 => apache설치
+- windows+apache+php+mysql (wamp패키지 설치)
+
+
+http://bitnami.com/stack/wamp/installer
+
+live server
+bracket pair colorizer
+
+<<php
+-1994년 Rasmus lerdorf 에 의해 개발
+-서버측에서 실행되는 프로그래밍 언어
+-Personal Home Page Tools  ==> PHP:Hypertext Preprocessor로 변경
+-거의 모든 데이터베이스 지원
+
+** php.net     /  phpschool.com
+
+
+c:\bitnami\wamp\ manager-windows
+
+=> chrome: http://localhost  
+
+C:\Bitnami\wampstack-8.0.3-0\apache2\htdocs
+   web server의 루트 ==http://localhost
+
+http://localhost/index.html
+=> web server 루트의 index.html에 접속해라
+
+http://localhost/basicphp
+
+* php의 설정파일: php.ini
+display_errors=on
+
+
+C:\Bitnami\wampstack-8.0.3-0\apache2\htdocs\basicphp\test1.php
+http://localhost/basicphp/test1.php
+----------------------------------------------------------------------------------
+<<php문법
+1. java, c와 거의 동일
+2. 문장뒤에  ; 붙이고
+3. <?php......... ?>
+4. php코드의 위치는 아무데나 위치 가능
+5. 변수이름앞에 $ 붙인다.
+6. 연결연산자: .
+7. 주석: //,  /*....*/
+
+**Parse error:문법에러( 스펠링 오류/ php문법이 옳지 않다)
+이건 니네가 잡을 수 있는 거야
+opcache.enable=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
